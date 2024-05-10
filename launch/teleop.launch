@@ -6,6 +6,8 @@
 
     <arg name="car_name" default="car" />
 
+    <arg name="use_keyboard" default="1" />
+
     <!-- Launch  map server-->
     <group if="$(arg map_server)">
         <include file="$(find mushr_base)/launch/includes/map_server.launch" />
@@ -25,6 +27,7 @@
             <arg name="racecar_color" value="" />
 
             <arg name="car_name" value="$(arg car_name)" />
+            <arg name="use_keyboard" value="$(arg use_keyboard)" />
          </include>
     </group>
 
